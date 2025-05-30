@@ -11,49 +11,57 @@
           object-fit: cover;
           height: 200px;
       }
+
+      body {
+            font-family: 'myFont', sans-serif;
+            background-color: #f8f9fa;
+        }
+            @font-face {
+            font-family: myFont;
+            src: url(../assets/fonts/RMNeue-SemiBold.woff2) format('woff2');
+            }
     </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="home.html">
-                    <img src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--b05ba79b-d2fc-4155-b958-210c4694a6de/_kq9cckrnlogidldtdie2fkbl.webp?preferwebp=true&width=56&height=56" alt="logo-rm">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav justify-content-center w-100">
-                        <li class="nav-item">
-                            <a class="nav-link" href="home.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="">Mejores Jugadores</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="best-season.html">Mejor Temporada</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="history.html">Historia del Club</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="stadium.html">Estadio Oficial del Club</a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="container-fluid">
+            <img src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--b05ba79b-d2fc-4155-b958-210c4694a6de/_kq9cckrnlogidldtdie2fkbl.webp?preferwebp=true&width=56&height=56" alt="logo-rm">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-center w-100">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="best-players.html">Mejores Jugadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="best-season.html">Mejor Temporada</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="history.html">Historia del Club</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stadium.html">Estadio Oficial del Club</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true"></a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
         <div class="container text-center my-4">
-            <h1>Bienvenido a la Página de Mejores Jugadores</h1>
+            <h1>Mejores Jugadores</h1>
         </div>
     </header>
 
     <main class="container">
         <section class="mb-5">
-            <h2 class="mb-4">Mejores Jugadores</h2>
             <p class="mb-4">Descubre el talento y las hazañas de los jugadores más destacados de la temporada. A continuación, se muestra una lista de perfiles con estadísticas y datos clave.</p>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <!-- Jugagor Card 1 -->
